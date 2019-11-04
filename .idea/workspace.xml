@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd93d60c-21be-461e-abec-a2e63e894db6" name="Default Changelist" comment="First Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HeldenSpiel/ownQueue/Held.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HeldenSpiel/ownQueue/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HeldenSpiel/ownQueue/Queue2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/HeroGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HeroGame.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HeldenSpiel/queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeldenSpiel/queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HeldenSpiel/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeldenSpiel/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +19,13 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -24,6 +33,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -36,13 +46,14 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1SpnxHhadnOpHOuArjXsIcOhOeE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="IntelliLang.Configuration" />
   </component>
   <component name="RecentsManager">
