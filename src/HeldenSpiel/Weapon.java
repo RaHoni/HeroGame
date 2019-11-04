@@ -30,8 +30,7 @@ public class Weapon
     
     public String getMaterial() {return material;}
 
-    public void setMagic(int pMag) {
-        magic = pMag;}
+    public void setMagic(int pMag) {magic = pMag;}
     
     public int getMagic() {return magic;}
 }
