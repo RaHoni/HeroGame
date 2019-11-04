@@ -13,11 +13,13 @@ public class Queue2 {
     }
 
     public void enqueue(Held p) {
-        head.setContent(p);
+        Node newNode = new Node(p);
+        tail.setNextNode(newNode);
+        tail = newNode;
     }
 
     public void dequeue() {
-        head.setContent(head.getNextNode().getContent());
+        head = (head.getNextNode());
     }
 
     public Held front() {
