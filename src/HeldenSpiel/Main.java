@@ -1,4 +1,7 @@
 package HeldenSpiel;
 
-public class Main {
+class Main {
+    public static void main(String[] args) {
+
+    }
 }
