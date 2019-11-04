@@ -1,14 +1,13 @@
 package HeldenSpiel;
 
 public class queue {
-    private Held[] bank;
-    public queue(){bank = new Held[30];}
+    private Hero[] bank;
+    public queue(){bank = new Hero[30];}
 
-    public void addHeld(Held h){
+    public void addHeld(Hero h){
         for(int i = 0; i<bank.length; i++){
             if(bank[i]==null){
                 bank[i] = h;
-                break;
             } } }
 
     public void removeHeld(){
@@ -16,7 +15,7 @@ public class queue {
         bank[bank.length -1] = null;
     }
 
-    public Held firstHeld(){return bank[0]; }
+    public Hero firstHeld(){return bank[0]; }
 
     public boolean bankEmpty(){return bank[0]==null;}
 }
