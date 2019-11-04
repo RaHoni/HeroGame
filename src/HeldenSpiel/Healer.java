@@ -20,13 +20,15 @@ public class Healer {
     }
 
     public void heal() {
-        Hero tHero = queue.poll();
-        int oldLivePoints = tHero.getLivePoints();
+        if (!queue.isEmpty()) {
+            Hero tHero = queue.poll();
+            int oldLivePoints = tHero.getLivePoints();
 
-        if (oldLivePoints < tHero.getMaxLivePoints()) {
-            int newLivePoints = oldLivePoints + healFactor;
-            if (newLivePoints > tHero.getMaxLivePoints()) newLivePoints = tHero.getMaxLivePoints();
-            tHero.setLivePoints(newLivePoints);
+            if (oldLivePoints < tHero.getMaxLivePoints()) {
+                int newLivePoints = oldLivePoints + healFactor;
+                if (newLivePoints > tHero.getMaxLivePoints()) newLivePoints = tHero.getMaxLivePoints();
+                tHero.setLivePoints(newLivePoints);
+            }
         }
     }
 
