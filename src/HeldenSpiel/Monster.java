@@ -1,33 +1,24 @@
 package HeldenSpiel;
 
-/**
- * @author RaHoni und Cat
- * @version 0.1
- */
-public class Monster
-{
-    // Bezugsobjekte
-
-    // Attribute
+public class Monster {
     private int attackDamage;
     private int livePoints;
 
-    // Konstruktor
-    public Monster(int pAW,int pLP)
-    {
+    public Monster(int pAW, int pLP) {
         attackDamage = pAW;
         livePoints = pLP;
     }
 
-    // Dienste
     public int getAttackDamage() {
         return attackDamage;
     }
-    
+
     public void setLivePoints(int pLP) {
         livePoints = pLP;
     }
-    
-    public int getLivePoints() {return livePoints;}
+
+    public int getLivePoints() {
+        return livePoints;
+    }
 
 }

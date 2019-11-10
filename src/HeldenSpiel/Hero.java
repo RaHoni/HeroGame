@@ -1,15 +1,8 @@
 package HeldenSpiel;
 
-/**
- * @author RaHoni und Cat
- * @version 0.1
- */
 
-public class Hero
-{
-    // Bezugsobjekte
+public class Hero {
 
-    // Attribute
     private final String name;
     private int strength;
     private int attackDamage;
@@ -17,9 +10,7 @@ public class Hero
     private final int maxLivePoints;
     private Weapon myWeapon;
 
-    // Konstruktor
-    Hero(String pNa, int pSt, int pAW, int pLP)
-    {
+    Hero(String pNa, int pSt, int pAW, int pLP) {
         name = pNa;
         strength = pSt;
         attackDamage = pAW;
@@ -31,44 +22,50 @@ public class Hero
         return maxLivePoints;
     }
 
-    // Dienste
-
-
     public void setStrength(int pSt) {
-        strength = pSt;}
+        strength = pSt;
+    }
 
-    int getStrength() {return strength;}
+    int getStrength() {
+        return strength;
+    }
 
     void setAttackDamage(int pAW) {
-        attackDamage = pAW;}
+        attackDamage = pAW;
+    }
 
     public int getAttackDamage() {
         calculateAttackDamage();
-        return attackDamage;}
+        return attackDamage;
+    }
 
     void setLivePoints(int pLP) {
-        livePoints =pLP;}
+        livePoints = pLP;
+    }
 
-    int getLivePoints() {return livePoints;}
+    int getLivePoints() {
+        return livePoints;
+    }
 
     public void calculateAttackDamage() {
-        if (myWeapon != null){
+        if (myWeapon != null) {
             attackDamage = strength + myWeapon.getBonus();
         } else {
             attackDamage = strength;
         }
     }
-    
+
     public int getWaffenBonus() {
         if (myWeapon != null) {
             return myWeapon.getBonus();
         } else return 0;
     }
-    
+
     public int getWaffenMagie() {
         if (myWeapon != null) {
             return myWeapon.getMagic();
-        } else return 0;}
+        } else return 0;
+    }
 
     public String getName() {
         return name;
