@@ -1,11 +1,9 @@
 package HeldenSpiel.ownQueue;
 
 
-import HeldenSpiel.Hero;
-
-public class Queue2 {
-    private Node head;
-    private Node tail;
+public class Queue2<ContentType> {
+    private Node<ContentType> head;
+    private Node<ContentType> tail;
 
     public Queue2() {
         head = null;
@@ -16,8 +14,8 @@ public class Queue2 {
         return head.getContent() == null;
     }
 
-    public void enqueue(Hero p) {
-        Node newNode = new Node(p);
+    public void enqueue(ContentType p) {
+        Node<ContentType> newNode = new Node<>(p);
         if (head.getContent() == null) {
             head = newNode;
             tail = newNode;
@@ -34,7 +32,7 @@ public class Queue2 {
         } else head = head.getNextNode();
     }
 
-    public Hero front() {
+    public ContentType front() {
         return head.getContent();
     }
 }
