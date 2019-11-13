@@ -1,26 +1,28 @@
 package HeldenSpiel.ownQueue;
 
+import HeldenSpiel.Hero;
+
 public class Node {
-    private Held content;
+    private Hero content;
     private Node nextNode;
 
-    public Node(Held inhalt) {
+    Node(Hero inhalt) {
         content = inhalt;
     }
 
-    public Held getContent() {
+    Hero getContent() {
         return content;
     }
 
-    public void setContent(Held content) {
+    public void setContent(Hero content) {
         this.content = content;
     }
 
-    public Node getNextNode() {
+    Node getNextNode() {
         return nextNode;
     }
 
-    public void setNextNode(Node input) {
+    void setNextNode(Node input) {
         nextNode = input;
     }
 }
