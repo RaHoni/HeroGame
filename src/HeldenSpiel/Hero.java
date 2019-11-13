@@ -1,38 +1,26 @@
 package HeldenSpiel;
 
-/**
- * @author RaHoni und Cat
- * @version 0.1
- */
 
-public abstract class Hero {
-    // Bezugsobjekte
+public class Hero {
 
-    // Attribute
     private final String name;
     private int strength;
+    private int attackDamage;
     private int livePoints;
     private final int maxLivePoints;
-    private int luck;
-    private int intelligence;
     private Weapon myWeapon;
 
-    // Konstruktor
-    Hero(String pName, int pStrength, int pLifePoints, int pMaxLivePoints, int pLuck, int pIntelligence) {
-        name = pName;
-        strength = pStrength;
-        livePoints = pLifePoints;
-        maxLivePoints = pMaxLivePoints;
-        luck = pLuck;
-        intelligence = pIntelligence;
+    Hero(String pNa, int pSt, int pAW, int pLP) {
+        name = pNa;
+        strength = pSt;
+        attackDamage = pAW;
+        livePoints = pLP;
+        maxLivePoints = pLP;
     }
 
     int getMaxLivePoints() {
         return maxLivePoints;
     }
-
-    // Dienste
-
 
     public void setStrength(int pSt) {
         strength = pSt;
@@ -42,14 +30,14 @@ public abstract class Hero {
         return strength;
     }
 
-    int getWeaponBonus() {
-        if (myWeapon != null) return myWeapon.getBonus();
-        else return 1;
-
+    void setAttackDamage(int pAW) {
+        attackDamage = pAW;
     }
 
-
-    abstract public int getAttackDamage(int leveldifference);
+    public int getAttackDamage() {
+        calculateAttackDamage();
+        return attackDamage;
+    }
 
     void setLivePoints(int pLP) {
         livePoints = pLP;
@@ -59,8 +47,21 @@ public abstract class Hero {
         return livePoints;
     }
 
+    public void calculateAttackDamage() {
+        if (myWeapon != null) {
+            attackDamage = strength + myWeapon.getBonus();
+        } else {
+            attackDamage = strength;
+        }
+    }
 
-    public int getWeaponMagic() {
+    public int getWaffenBonus() {
+        if (myWeapon != null) {
+            return myWeapon.getBonus();
+        } else return 0;
+    }
+
+    public int getWaffenMagie() {
         if (myWeapon != null) {
             return myWeapon.getMagic();
         } else return 0;
